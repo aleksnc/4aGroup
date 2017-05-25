@@ -1,0 +1,90 @@
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+#landing-content {
+    overflow: hidden;
+    background-image: url(IMG-6.jpg);
+    width: 100%;
+    max-width: 977px;
+    margin: 0 auto;
+    background-size: 150% 150%;
+    background-repeat: no-repeat;
+    max-height: 500px;
+    border-bottom: solid;
+    border-bottom-color: #628027;
+    border-bottom-width: 5px;
+    position: relative;
+}
+
+.slider {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding-top: 200px;
+    max-width: 1002px;
+    height: 100vh;
+    max-height: 500px;
+}
+
+/*.slider img {*/
+    /*width: 80%;*/
+    /*padding-left: 10%;*/
+    /*padding-right: 10%;*/
+    /*height: auto;*/
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+/*}*/
+
+
+.planet-earth{
+    position: absolute;
+    width: 250px;
+    top: 70px;
+    left: 70px;
+}
+
+.rocketq{
+    transform: rotate(45deg);
+    position: absolute;
+    width: 150px;
+    top: 150px;
+    left: 150px;
+    z-index: 3;
+}
+
+.cloud{
+    display: block;
+    position:  absolute;
+    right: 0;
+}
+
+.cloud1{
+    width: 100px;
+    left: 10px;
+}
+.cloud2{
+     width: 150px;
+     left: 250px;
+     top: 50px;
+     z-index: 4;
+ }
+
+.cloud3{
+    width: 150px;
+    left: 200px;
+    top: 200px;
+    z-index: 2;
+}
+
+.cloud4{
+    width: 100px;
+    left: 370px;
+    top: 170px;
+    z-index: 2;
+}
