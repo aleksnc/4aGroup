@@ -7,3 +7,39 @@ html, body {
 * {
     box-sizing: border-box;
 }
+
+.langSwitch-wrapper{
+    position: relative;
+    margin: 150px auto;
+    max-width: 300px;
+    height: 150px;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+.langSwitch{
+    position: relative;
+    max-height: 50%;
+    cursor: pointer;
+    max-width: 90px;
+    width: 100%;
+    height: 100%;
+}
+
+.spaceman{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat:  no-repeat;
+    background-image: url("Image/ru.png");
+}
+
+.spaceman--en{
+    background-image: url("Image/en.png");
+}
+
+.text{
+    text-align: center;
+}
