@@ -1,5 +1,4 @@
-if($('div').hasClass('langSwitch')) {
-
+if ($('div').hasClass('langSwitch')) {
     arr = [];
     var ltr = true;
     var sin = true;
@@ -77,12 +76,58 @@ if($('div').hasClass('langSwitch')) {
     }
 }
 
-$('.langSwitch, .spaceman').click(function(){
-   $('.spaceman').toggleClass('spaceman--en');
+
+var thisX=0;
+var thisY=0;
+
+var translateInterval;
+var translateOberInterval;
+
+
+$('.spaceman2').hover(
+    function () {
+        translateInterval = setInterval(function () {
+            var thisTransform = $('.spaceman2').css('transform');
+            var MatrixTransform = thisTransform.replace(/^\w*\(/, '').replace(')', '').split(/\s*,\s*/);
+            thisX = MatrixTransform[4];
+            thisY = MatrixTransform[5];
+          // console.log(thisTransform);
+
+        }, 1000 / 60);
+    },
+    function () {
+        clearInterval(translateInterval);
+
+        $('.spaceman2').removeClass('animation');
+
+        translateOberInterval = setInterval(function () {
+            thisX = 0.15+thisX*1;
+            thisY = 0.15+ thisY*1;
+            console.log(thisX);
+            console.log(thisY);
+
+            $('.spaceman2').css({
+                'transform': 'translateX(' + thisX + 'px) translateY(' + thisY + 'px)  rotate(-45deg)'
+            });
+            if (thisX >= 0 || thisY >= 0) {
+
+                $('.spaceman2').css({
+                    'transform': 'rotate(-45deg)'
+                });
+                $('.spaceman2').addClass('animation');
+
+                clearInterval(translateOberInterval);
+            }
+        }, 1000 / 60);
+    }
+);
+
+$('.langSwitch, .spaceman2').click(function () {
+    $('.spaceman').toggleClass('spaceman--en');
     $('.text').empty();
-    if($('.spaceman').hasClass('spaceman--en')){
+    if ($('.spaceman').hasClass('spaceman--en')) {
         $('.text').html('click on the astronaut');
-    } else{
+    } else {
         $('.text').html('нажми на космонавта');
     }
 });
