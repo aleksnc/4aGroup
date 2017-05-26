@@ -1,11 +1,9 @@
 @keyframes go-left-right {   /* назовём анимацию: "go-left-right" */
     from {
-        left: 147px;
-        top: 10px;
+        transform: translateX(0px) translateY(0px)  rotate(-45deg);
     }
     to {
-        left: 136px;
-        top: -8px;
+        transform: translateX(-22px) translateY(-22px)  rotate(-45deg);
     }
 }
 
@@ -13,12 +11,10 @@
 /* Префикс для Chrome, Opera, Safari */
 @-webkit-keyframes go-left-right {
     from {
-        left: 147px;
-        top: 10px;
+        transform: translateX(0px) translateY(0px)  rotate(-45deg);
     }
     to {
-        left: 136px;
-        top: -8px;
+        transform: translateX(-22px) translateY(-22px)  rotate(-45deg);
     }
 }
 
@@ -60,9 +56,8 @@ html, body {
 }
 
 .spaceman2{
-  animation: go-left-right 2s infinite alternate;
-    -webkit-animation: go-left-right 2s infinite alternate;
-
+    left: 147px;
+    top: 10px;
     transform: rotate(-45deg);
     position: relative;
     max-height: 50%;
@@ -70,6 +65,12 @@ html, body {
     max-width: 90px;
     width: 100%;
     height: 100%;
+}
+
+.spaceman2:hover{
+    animation: go-left-right 2s infinite alternate;
+    -webkit-animation: go-left-right 2s infinite alternate;
+
 }
 
 .spaceman{

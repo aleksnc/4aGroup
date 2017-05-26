@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="837a7dd1-8b46-4f72-80e1-d1a1d9ea536c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sketch/LangSpaceMan/MyJs.js" afterPath="$PROJECT_DIR$/Sketch/LangSpaceMan/MyJs.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sketch/LangSpaceMan/style.css" afterPath="$PROJECT_DIR$/Sketch/LangSpaceMan/style.css" />
     </list>
     <ignored path="4aGroup.iws" />
@@ -38,8 +36,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Sketch/LangSpaceMan/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.16132858">
-              <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.17319098">
+              <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -364,8 +362,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Sketch/LangSpaceMan/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16132858">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.17319098">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
           <folding />
         </state>
       </provider>
